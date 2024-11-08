@@ -1,6 +1,7 @@
 
 import './App.css';
 import logo from './text-1731099881792.png';
+import linkedin from './icons8-linkedin-48.png'
 import { useState, useEffect } from 'react';
 
 
@@ -9,7 +10,7 @@ function App() {
       <div className="App">
 
           <header className="App-header">
-              <div className={"navbar"}>
+              <nav className={"navbar"}>
                   <div>
                       <img className={"logo"} src={logo} alt="logo"/>
                   </div>
@@ -20,10 +21,13 @@ function App() {
                       <li className="navbarElement" href="#about">Resumé</li>
                       <li className="navbarElement" href="#about">Contact</li>
                   </ul>
-              </div>
+                  <div className={"linkContainer"}>
+                      <img src={linkedin} alt="linkedin"/>
+                  </div>
+              </nav>
           </header>
-              <p>
-                  Edit <code>src/App.js</code> and save to reload.
+          <p>
+              Edit <code>src/App.js</code> and save to reload.
               </p>
               <a
                   className="App-link"
